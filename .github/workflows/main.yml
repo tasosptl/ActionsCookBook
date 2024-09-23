@@ -3,9 +3,9 @@ on:
   push:
     branches:
       - main
-  jobs:
-    first_job:
-      name: My first job
-      runs_on: ubuntu-latest
-      steps:
-        - run: echo "Hello world from ${{ github.actor}}."
+jobs:
+  first_job:
+    name: My first job
+    runs_on: ubuntu-latest
+    steps:
+      - run: echo "Hello world from ${{ github.actor}}."
