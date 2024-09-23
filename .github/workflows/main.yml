@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: | 
-          echo "Hello ${{ env.WHO_TO_GREET }} from ${{ github.actor }}."
+          echo "Hello ${{ vars.WHO_TO_GREET }} from ${{ github.actor }}."
           echo "My secret is ${{ secrets.MY_SECRET }}."
