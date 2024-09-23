@@ -8,4 +8,7 @@ jobs:
     name: My first job
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world from ${{ github.actor }}."
+      - run: | 
+      
+      echo "Hello ${{ vars.WHO_TO_GREET }} from ${{ github.actor }}."
+      echo "My secret is ${{ secerts.MY_SECRET }}."
