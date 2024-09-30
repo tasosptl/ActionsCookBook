@@ -1,0 +1,10 @@
+name: Develop in Branch
+on: [pull_request, workflow_dispatch]
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - run: | 
+                echo "Workflow triggered in branch '$GITHUB_REF'."
+                echo "Workflow triggered by actor ${{ github.actor }}."
+                echo "Workflow triggered by event ${{ github.event_name }}."
